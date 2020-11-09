@@ -147,16 +147,93 @@ txt_American_Coffee.grid(row = 6, column = 1)
 txt_Iced_Cappuccino = Entry(Drinks_F, font=('arial', 16, 'bold'), bd = 3, width = 6, justify = LEFT, state = DISABLED)
 txt_Iced_Cappuccino.grid(row = 7, column = 1)
 
-#=====================================================================================================================================================================================================
+#==================================Total Cost================================================================================================================================================================
+
+lblCostOfDrinks = Label(Cost_F, font=('arial', 14, 'bold'), text="Cost Of Drinks\n", bg='Powder Blue', fg='Black')
+lblCostOfDrinks.grid(row=0, column=0, sticky = W)
+
+txt_Cost_of_drinks = Entry(Cost_F, font=('arial', 14, 'bold'), bg = 'white', bd = 7, insertwidth = 2, justify = RIGHT)
+txt_Cost_of_drinks.grid(row=0, column=1)
+
+
+
+lblCostOfCakes = Label(Cost_F, font=('arial', 14, 'bold'), text="Cost Of Cakes\n", bg='Powder Blue', fg='Black')
+lblCostOfCakes.grid(row=1, column=0, sticky = W)
+
+txt_Cost_of_Cakes = Entry(Cost_F, font=('arial', 14, 'bold'), bg = 'white', bd = 7, insertwidth = 2, justify = RIGHT)
+txt_Cost_of_Cakes.grid(row=1, column=1)
+
+
+
+lblServiceCharge = Label(Cost_F, font=('arial', 14, 'bold'), text="Service Charge\n", bg='Powder Blue', fg='Black')
+lblServiceCharge.grid(row=2, column=0, sticky = W)
+
+txt_Service_Charge = Entry(Cost_F, font=('arial', 14, 'bold'), bg = 'white', bd = 7, insertwidth = 2, justify = RIGHT)
+txt_Service_Charge.grid(row=2, column=1)
+
+#==================================Payment Information=======================================================================================================================================================
+
+lblPaidTax = Label(Cost_F, font=('arial', 14, 'bold'), text="Paid Tax\n", bg='Powder Blue', fg='Black')
+lblPaidTax.grid(row=0, column=2, sticky = W)
+
+txt_Paid_Tax = Entry(Cost_F, font=('arial', 14, 'bold'), bg = 'white', bd = 7, insertwidth = 2, justify = RIGHT)
+txt_Paid_Tax.grid(row=0, column=3)
+
+
+
+lblSubTotal = Label(Cost_F, font=('arial', 14, 'bold'), text="Sub Total\n", bg='Powder Blue', fg='Black')
+lblSubTotal.grid(row=1, column=2, sticky = W)
+
+txt_SubTotal = Entry(Cost_F, font=('arial', 14, 'bold'), bg = 'white', bd = 7, insertwidth = 2, justify = RIGHT)
+txt_SubTotal.grid(row=1, column=3)
+
+
+
+lblToatalCost = Label(Cost_F, font=('arial', 14, 'bold'), text="Total Cost\n", bg='Powder Blue', fg='Black')
+lblToatalCost.grid(row=2, column=2, sticky = W)
+
+txt_ToatalCost = Entry(Cost_F, font=('arial', 14, 'bold'), bg = 'white', bd = 7, insertwidth = 2, justify = RIGHT)
+txt_ToatalCost.grid(row=2, column=3)
+
+#==================================Receipt===================================================================================================================================================================
 
 txt_Receipt = Text(Receipt_F, width = 46, height = 12, bg = 'white', bd = 4, font=('arial', 12, 'bold'))
 txt_Receipt.grid(row=0, column=0)
+
+#============================================================================================================================================================================================================
 
 btn_Total = Button(Buttons_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "Total", bg = "Powder Blue").grid(row=0, column=0)
 btn_Receipt = Button(Buttons_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "Receipt", bg = "Powder Blue").grid(row=0, column=1)
 btn_Reset = Button(Buttons_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "Reset", bg = "Powder Blue").grid(row=0, column=2)
 btn_Exit = Button(Buttons_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "Exit", bg = "Powder Blue").grid(row=0, column=3)
 
-#=====================================================================================================================================================================================================
+#==================================Calculator Display=========================================================================================================================================================
+
+txt_Display = Entry(Cal_F, width = 45, bg = 'white', bd = 4, font=('arial', 12, 'bold'), justify = RIGHT)
+txt_Display.grid(row=0, column=0, columnspan = 4, pady = 1)
+txt_Display.insert(0, "0")
+
+#==================================Calculator Buttons=========================================================================================================================================================
+
+btn7 = Button(Cal_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "7", bg = "Powder Blue").grid(row=2, column=0)
+btn8 = Button(Cal_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "8", bg = "Powder Blue").grid(row=2, column=1)
+btn9 = Button(Cal_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "9", bg = "Powder Blue").grid(row=2, column=2)
+btnAdd = Button(Cal_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "+", bg = "Powder Blue").grid(row=2, column=3)
+btn4 = Button(Cal_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "4", bg = "Powder Blue").grid(row=3, column=0)
+btn5 = Button(Cal_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "5", bg = "Powder Blue").grid(row=3, column=1)
+btn6 = Button(Cal_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "6", bg = "Powder Blue").grid(row=3, column=2)
+btnSub = Button(Cal_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "-", bg = "Powder Blue").grid(row=3, column=3)
+btn1 = Button(Cal_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "1", bg = "Powder Blue").grid(row=4, column=0)
+btn2 = Button(Cal_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "2", bg = "Powder Blue").grid(row=4, column=1)
+btn3 = Button(Cal_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "3", bg = "Powder Blue").grid(row=4, column=2)
+btnMult = Button(Cal_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "*", bg = "Powder Blue").grid(row=4, column=3)
+btn0 = Button(Cal_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "0", bg = "Powder Blue").grid(row=5, column=0)
+btnClear = Button(Cal_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "C", bg = "Powder Blue").grid(row=5, column=1)
+btnEqual = Button(Cal_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "=", bg = "Powder Blue").grid(row=5, column=2)
+btnDiv = Button(Cal_F, padx=16, pady = 1, bd = 7, fg = 'Black', font=('arial', 16, 'bold'), width = 4, text = "/", bg = "Powder Blue").grid(row=5, column=3)
+
+
+
+
 root.mainloop()
 
