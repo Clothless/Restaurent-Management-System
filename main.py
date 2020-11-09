@@ -59,14 +59,14 @@ var16 = IntVar()
 
 
 
-Latta = Checkbutton(Drinks_F, text="Latta", variable = var1, onvalue = 1, offvalue = 0,font('arial', 18, 'bold'), bg = "Powder Blue").grid(row = 0, sticky = w)
-Latta = Checkbutton(Drinks_F, text="Latta", variable = var2, onvalue = 1, offvalue = 0,font('arial', 18, 'bold'), bg = "Powder Blue").grid(row = 0, sticky = w)
-Latta = Checkbutton(Drinks_F, text="Latta", variable = var3, onvalue = 1, offvalue = 0,font('arial', 18, 'bold'), bg = "Powder Blue").grid(row = 0, sticky = w)
-Latta = Checkbutton(Drinks_F, text="Latta", variable = var4, onvalue = 1, offvalue = 0,font('arial', 18, 'bold'), bg = "Powder Blue").grid(row = 0, sticky = w)
-Latta = Checkbutton(Drinks_F, text="Latta", variable = var5, onvalue = 1, offvalue = 0,font('arial', 18, 'bold'), bg = "Powder Blue").grid(row = 0, sticky = w)
-Latta = Checkbutton(Drinks_F, text="Latta", variable = var6, onvalue = 1, offvalue = 0,font('arial', 18, 'bold'), bg = "Powder Blue").grid(row = 0, sticky = w)
-Latta = Checkbutton(Drinks_F, text="Latta", variable = var7, onvalue = 1, offvalue = 0,font('arial', 18, 'bold'), bg = "Powder Blue").grid(row = 0, sticky = w)
-Latta = Checkbutton(Drinks_F, text="Latta", variable = var8, onvalue = 1, offvalue = 0,font('arial', 18, 'bold'), bg = "Powder Blue").grid(row = 0, sticky = w)
+Latta = Checkbutton(Drinks_F, text="Latta", variable = var1, onvalue = 1, offvalue = 0, font=('arial', 18, 'bold'), bg = 'Powder Blue').grid(row = 0, sticky = W)
+Espresso = Checkbutton(Drinks_F, text="Espresso", variable = var2, onvalue = 1, offvalue = 0, font=('arial', 18, 'bold'), bg = "Powder Blue").grid(row = 1, sticky = W)
+Iced_Latta = Checkbutton(Drinks_F, text="Iced Latta", variable = var3, onvalue = 1, offvalue = 0, font=('arial', 18, 'bold'), bg = "Powder Blue").grid(row = 2, sticky = W)
+Vale_Coffee = Checkbutton(Drinks_F, text="Vale Coffee", variable = var4, onvalue = 1, offvalue = 0, font=('arial', 18, 'bold'), bg = "Powder Blue").grid(row = 3, sticky = W)
+Cappuccino = Checkbutton(Drinks_F, text="Cappuccino", variable = var5, onvalue = 1, offvalue = 0, font=('arial', 18, 'bold'), bg = "Powder Blue").grid(row = 4, sticky = W)
+African_Coffee = Checkbutton(Drinks_F, text="African Coffee", variable = var6, onvalue = 1, offvalue = 0, font=('arial', 18, 'bold'), bg = "Powder Blue").grid(row = 5, sticky = W)
+American_coffee = Checkbutton(Drinks_F, text="American coffee", variable = var7, onvalue = 1, offvalue = 0, font=('arial', 18, 'bold'), bg = "Powder Blue").grid(row = 6, sticky = W)
+Iced_Cappuccino = Checkbutton(Drinks_F, text="Iced Cappuccino", variable = var8, onvalue = 1, offvalue = 0, font=('arial', 18, 'bold'), bg = "Powder Blue").grid(row = 7, sticky = W)
 
 root.mainloop()
 
